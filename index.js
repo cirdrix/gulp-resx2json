@@ -19,7 +19,7 @@ module.exports = function(opt) {
     valueNodes.forEach(function(element) {
       var name = element.attr.name;
       var value = element.firstChild.val;
-      if (element.lastChild && element.lastChild.val == 'ng')
+      if (opt.commentValue && element.lastChild && element.lastChild.val == opt.commentValue)
       {
         resourceObject[name] = value;
       }
