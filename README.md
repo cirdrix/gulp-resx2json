@@ -1,6 +1,6 @@
 # gulp-resx2json [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
 
-> A pure JS `.resx` file converter (XML to JSON) plugin for gulp.
+> A pure JS `.resx` file converter (XML to JSON) plugin for gulp. With this fork you can filter the elements in the resx with a comment value.
 
 ## Usage
 
@@ -17,7 +17,7 @@ var resx2json = require('gulp-resx2json');
 
 gulp.task('resources', function(){
   gulp.src(['resource.resx'])
-    .pipe(resx2json())
+    .pipe(resx2json({ commentValue : 'filter comment value' }))
     .pipe(gulp.dest('resources/resource.json'));
 });
 ```
