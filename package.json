@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/toqueteos/gulp-resx2json.git"
+    "url": "git://github.com/cirdrix/gulp-resx2json.git"
   },
   "keywords": [
     "gulp",
@@ -32,7 +32,7 @@
   "author": "Carlos Cobo <toqueteos@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/toqueteos/gulp-resx2json/issues"
+    "url": "https://github.com/cirdrix/gulp-resx2json/issues"
   },
   "engines": {
     "node": ">=0.10"
