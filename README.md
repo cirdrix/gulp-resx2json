@@ -1,13 +1,16 @@
-# gulp-resx2json [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
-
-> A pure JS `.resx` file converter (XML to JSON) plugin for gulp. With this fork you can filter the elements in the resx with a comment value.
+> A pure JS `.resx` file converter (XML to JSON) plugin for gulp. 
+> With this fork you can filter the elements in the resx with a comment value.
 
 ## Usage
 
-First, install `gulp-resx2json` as a development dependency:
+First, install `gulp-resx2json` as a development dependency by edit the package.json:
 
 ```shell
-npm install --save-dev gulp-resx2json
+"devDependencies": {
+    ...
+    "gulp-resx2json": "github:cirdrix/gulp-resx2json.git#1.0.2",
+	...
+}
 ```
 
 Then, add it to your `gulpfile.js`:
@@ -21,8 +24,3 @@ gulp.task('resources', function(){
     .pipe(gulp.dest('resources/resource.json'));
 });
 ```
-
-[npm-image]: https://badge.fury.io/js/gulp-resx2json.svg
-[npm-url]: https://npmjs.org/package/gulp-resx2json
-[travis-image]: https://secure.travis-ci.org/toqueteos/gulp-resx2json.svg?branch=master
-[travis-url]: http://travis-ci.org/toqueteos/gulp-resx2json
